@@ -7,10 +7,10 @@ const ItemDetail = ({product}) => {
         <div>
             <img src={product.image} alt={product.name} />
         </div>
-        <div className='flex-col justify-start items-start'>
+        <div className='flex-col'>
             <section>
                 <h2 className='text-pink-500 text-6xl'>{product.name}</h2>
-                <p>{product.description}</p>
+                <p className='text-gray-800 mb-4 mt-4 text-xl'>{product.description}</p>
             </section>
             <section>
                 <ItemCount stock={product.stock} />
