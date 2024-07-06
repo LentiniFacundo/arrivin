@@ -21,9 +21,9 @@ const ItemDetailContainer = () => {
             .finally(() => hideLoading())
     }, [])
   return (
-    <>
-    {isLoading ? <Loader /> : <div className='flex justify-center items-center mt-3'><ItemDetail product={product} /></div>}
-    </>
+    <div className='flex justify-center items-center mt-6'>
+    {isLoading ? <Loader /> : <ItemDetail product={product} />}
+    </div>
   )
 }
 
