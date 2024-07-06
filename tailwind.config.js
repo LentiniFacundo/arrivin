@@ -5,7 +5,17 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      'fontFamily': {
+        'quantic': ["Quantico", 'sans-serif'],
+      },
+      keyframes: {
+        loader: {'to': {transform: 'rotate(360deg)'}},
+      },
+      animation: {
+        'loader': 'loader 1s linear infinite'
+      }
+    },
   },
   plugins: [],
 }

@@ -1,11 +1,12 @@
-import ItemListContainer from "./components/ItemListContainer"
-import NavBar from "./components/NavBar"
+import ItemCount from "./components/ItemCount/ItemCount"
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
+import NavBar from "./components/NavBar/NavBar"
 
 function App() {
   return (
     <>
     <NavBar />
-    <ItemListContainer text="Bienvenido a ARRIVIN'" />
+    <ItemListContainer />
     </>
   )
 }
