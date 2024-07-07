@@ -1,23 +1,21 @@
 import React, { useState } from 'react'
+import Count from './Count';
 
 const ItemCount = ({stock}) => {
-    let [counter, setCounter] = useState(0)
+    let [counter, setCounter] = useState(1)
 
     const countUp = () => {
         (counter < stock) && setCounter(counter + 1);
     }
 
     const countDown = () => {
-      counter && setCounter(counter - 1);
+      (counter > 1) && setCounter(counter - 1);
     }
 
+    const clearCounter = () => setCounter(1)
+
   return (
-    <div>
-      <p>ItemCount: {counter}</p>
-      <p>Stock: {stock}</p>
-      <button onClick={countUp}>+</button>
-      <button onClick={countDown}>-</button>
-    </div>
+    <Count counter={counter} countUp={countUp} countDown={countDown} clearCounter={clearCounter} stock={stock} />
   )
 }
 

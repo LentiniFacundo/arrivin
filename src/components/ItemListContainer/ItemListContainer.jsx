@@ -26,8 +26,7 @@ const ItemListContainer = () => {
     .catch(error => console.log(error))
     .finally(() => {
       hideLoading()
-      }
-      )
+      })
   }, [categoryName]);
 
   return (
