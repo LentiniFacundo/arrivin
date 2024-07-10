@@ -1,12 +1,12 @@
 import React from 'react'
-import logo from '../../assets/img/logo.webp'
+import logo from '/img/logo.webp'
 import NavBarSection from './NavBarSection'
 import CartWidget from '../CartWidget/CartWidget'
-import burguerSectionImg from '../../assets/img/sections/hamburguesas-section.webp'
-import alcoholicDrinksImg from '../../assets/img/sections/alcoholic-drinks-section.webp'
-import pizzasSectionImg from '../../assets/img/sections/pizzas-section.webp'
-import sushiSectionImg from '../../assets/img/sections/sushi-section.webp'
-import tacosSectionImg from '../../assets/img/sections/tacos-section.webp'
+import burguerSectionImg from '/img/sections/hamburguesas-section.webp'
+import alcoholicDrinksImg from '/img/sections/alcoholic-drinks-section.webp'
+import pizzasSectionImg from '/img/sections/pizzas-section.webp'
+import sushiSectionImg from '/img/sections/sushi-section.webp'
+import tacosSectionImg from '/img/sections/tacos-section.webp'
 import { Link } from 'react-router-dom'
 
 const NavBar = () => {
