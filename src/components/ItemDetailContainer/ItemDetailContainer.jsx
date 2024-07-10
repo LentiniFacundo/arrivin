@@ -19,7 +19,7 @@ const ItemDetailContainer = () => {
             })
             .catch(error => console.log(error))
             .finally(() => hideLoading())
-    }, [id])
+    }, [])
   return (
     <div className='flex justify-center items-center mt-6'>
     {isLoading ? <Loader /> : <ItemDetail product={product} />}
