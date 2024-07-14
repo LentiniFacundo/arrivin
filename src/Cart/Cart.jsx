@@ -14,8 +14,8 @@ const Cart = () => {
                                 <img src={product.image} alt={product.name} />
                             </div>
                             <div className='w-full'>
-                                <h2 className='font-semibold text-gray-800 text-lg'>{product.name} X ${product.price}</h2>
-                                <p className='text-sm underline text-sky-500 cursor-pointer' onClick={() => deleteProductById(product.id)}>Eliminar</p>
+                                <h2 className='font-semibold text-gray-800 text-lg'>{product.name} X ${product.price.toLocaleString()}</h2>
+                                <button className='text-sm underline text-sky-500 cursor-pointer' onClick={() => deleteProductById(product.id)}>Eliminar</button>
                             </div>
                             <div className='w-24 text-center'>
                                 <p>Cantidad</p>
@@ -23,7 +23,7 @@ const Cart = () => {
                             </div>
                             <div className='w-24 text-center'>
                                 <p>Sub-total:</p>
-                                <p>${product.quantity * product.price}</p>
+                                <p>${(product.quantity * product.price).toLocaleString()}</p>
                             </div>
                         </article>
                     ))}
@@ -32,7 +32,7 @@ const Cart = () => {
                                 <button onClick={clearCart} className='bg-pink-500 text-white px-4 py-2 rounded-full hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-600 focus:ring-opacity-50'><p>Vaciar carrito</p></button>
                             </div>
                             <div className='w-full'>
-                                <h2 className='text-lg text-gray-800 font-semibold text-right m-2'>Precio Final: ${finalPrice()}</h2>
+                                <h2 className='text-lg text-gray-800 font-semibold text-right m-2'>Precio Final: ${finalPrice().toLocaleString()}</h2>
                             </div>
                         </section>
                     </div>

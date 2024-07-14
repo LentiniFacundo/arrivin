@@ -24,7 +24,7 @@ const ItemDetail = ({product}) => {
         <div className='col-start-2 col-end-3 row-start-1 row-end-2 flex-col justify-center items-center mt-4'>
              <h2 className='text-[#fe2f83] text-6xl text font-bold text-center'>{product.name}</h2>
              <p className='text-gray-800 mb-4 mt-4 text-xl'>{product.description}</p>
-             <h3 className='text-4xl font-bold text-gray-800'>$ {product.price}</h3>
+             <h3 className='text-4xl font-bold text-gray-800'>${product.price}</h3>
         </div>
         <div className='col-start-2 col-end-3 row-start-2 row-end-3'>
             <ItemCount stock={product.stock} addToCart={addToCart} />
