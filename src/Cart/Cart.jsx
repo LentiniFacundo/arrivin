@@ -31,8 +31,9 @@ const Cart = () => {
                             <div className='w-full'>
                                 <button onClick={clearCart} className='bg-pink-500 text-white px-4 py-2 rounded-full hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-600 focus:ring-opacity-50'><p>Vaciar carrito</p></button>
                             </div>
-                            <div className='w-full'>
+                            <div className='w-full flex flex-col justify-center items-end'>
                                 <h2 className='text-lg text-gray-800 font-semibold text-right m-2'>Precio Final: ${finalPrice().toLocaleString()}</h2>
+                                <Link to={"/checkout"} className='bg-pink-500 text-white px-4 py-2 rounded-full hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-600 focus:ring-opacity-50'>Finalizar compra</Link>
                             </div>
                         </section>
                     </div>
